@@ -11,14 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Material App',
-      //home: const CardScreen(),
-      initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
-      onGenerateRoute: (settins) {
-        return MaterialPageRoute(builder: (context) => const AlertScreen());
-      },
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Material App',
+        //home: const CardScreen(),
+        initialRoute: AppRoutes.initialRoute,
+        routes: AppRoutes.getAppRoutes(),
+        onGenerateRoute: AppRoutes.onGenerateRoute);
   }
 }
