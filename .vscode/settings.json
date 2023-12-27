@@ -1,0 +1,5 @@
+{
+    "json.format.enable": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": false
+}
